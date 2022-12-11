@@ -42,6 +42,8 @@ body {
 
 main {
   width:70%;
+  /* min-height:540px; */
+  height:fit-content;
   margin:50px auto;
   background-color:var(--white);
   border:1px solid var(--light-gray);
@@ -262,6 +264,7 @@ form  button {
 
 .btn {
   display:flex;
+  align-items:center;
   justify-content:space-between;
 }
 
@@ -421,4 +424,97 @@ button:not(.back):hover{
 .active-step {
   background-color:var(--pastel-blue);
   color:var(--marine-blue);
+}
+
+.step-5{
+  align-items:center;
+  justify-content:center;
+  margin:6rem 0;
+}
+
+article {
+  align-items:center;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  gap:1rem;
+}
+
+article > img {
+  width:4rem;
+}
+article > h1 {
+  color:var(--marine-blue);
+  font-size:2rem;
+}
+article > p {
+  color:var(--cool-gray);
+  font-size:1rem;
+  text-align:center;
+  line-height:1.4;
+}
+
+@media screen and (max-width:600px) {
+  
+  body {
+    background-color:var(--light-gray);
+  }
+
+  main {
+    width:100%;
+    background-color:var(--light-gray);
+    flex-direction:column;
+    margin:0;
+    position:relative;
+    margin:auto;
+    padding:0;
+    border:none;
+  }
+
+  aside {
+    border-radius:0;
+    position:absolute;
+    z-index:1;
+    width:100%;
+    height:200px;
+    background-image:url('../assets/images/bg-sidebar-mobile.svg');
+    height:200px;
+  }
+
+  .step {
+    display:none;
+  }
+
+  section {
+    position:relative;
+    inset:140px 5%;
+    width:90%;
+    z-index:99;
+    background-color:var(--white);
+    border-radius: .4rem;
+  }
+
+  .step-5 {
+    margin:3rem 0;
+  }
+
+  .btn {
+    height:50px;
+  }
+
+  .step-1  > input {
+    width:100%;
+  }
+
+  .step-1  > label {
+    width:100%;
+  }
+
+  nav > ol {
+    flex-direction:row;
+    justify-content:space-evenly;
+    width:60%;
+    margin:auto;
+  }
+
 }
