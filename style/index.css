@@ -37,6 +37,7 @@ body {
   font-family:Ubuntu,sans-serif;
   font-size:16px;
   max-width:1440px;
+  overflow-y: hidden;
   background-color:var(--alabaster);
 }
 
@@ -458,6 +459,7 @@ article > p {
   
   body {
     background-color:var(--light-gray);
+    overflow:visible;
   }
 
   main {
