@@ -11,6 +11,7 @@ const adds = document.querySelectorAll('.adds');
 const addCheckboxes = document.querySelectorAll('.adds > input');
 const steps = document.querySelectorAll('.number');
 const planTitle = document.querySelector('.title > h2');
+const backBtn = document.querySelector('.title > h3');
 
 
 let stepNumber = 0;
@@ -22,6 +23,7 @@ const plan = {
   1 : 'LargerStorage',
   2 : 'CustomizableProfile'
 };
+
 const prices = {
   Arcade : 9, 
   Advanced : 12,
@@ -52,7 +54,6 @@ checkbox.addEventListener('change', e => {
     else {
       addsPlan = addsPlan.filter((el,i) => el !== plan[index]);
     }
-    console.log(addsPlan)
     data = {...data,addsPlan};
   })
 });
@@ -149,5 +150,9 @@ const handleStep = (stepNumber) => {
   })
 })
 
-
+backBtn.addEventListener('click', e => {
+  stepNumber = 1;
+  handleStep(stepNumber);
+  handleForm(stepNumber)
+})
 
