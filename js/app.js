@@ -146,39 +146,8 @@ const handleStep = (stepNumber) => {
   }
   else lastStep.classList.add('none');
   handleStep(stepNumber);
-  console.log(stepNumber);
   })
 })
 
-
-// Dinamik yapılabilir!!
-// if(stepNumber === 3) {
-//   const {time,addsPlan,plan} = data;
-//   planTitle.textContent = `${plan}(${time})`;
-//   if(time === 'Monthly'){
-//     const container = document.createElement('div');
-//     container.innerHTML = `
-//     <div class="total-price">
-//           <div class="total">
-//             <div class="title">
-//               <h2>${Plan}(${time})</h2>
-//               <h3>Change</h3>
-//             </div>
-//             <div class="price">$${price[plan]}/mo</div>
-//           </div>
-//     </div>`
-//     addsPlan.forEach(plan => {
-//       const child = document.createElement('div');
-//       child.innerHTML = `
-//       <div class="services">
-//         <h4 class="service">${plan}</h4>
-//         <h4 class="price">$${price[plan]}/mp</h4>
-//       </div>
-//       `
-//       container.appendChild()
-//     })
-    
-//   }
-// }
 
 
