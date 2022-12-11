@@ -12,7 +12,8 @@ const addCheckboxes = document.querySelectorAll('.adds > input');
 const steps = document.querySelectorAll('.number');
 const planTitle = document.querySelector('.title > h2');
 const backBtn = document.querySelector('.title > h3');
-
+const advantages = document.querySelectorAll('.plan-card > h5');
+const yearlyPrices = document.querySelectorAll('.plan-card > h4');
 
 let stepNumber = 0;
 let isValid = true;
@@ -35,6 +36,19 @@ const prices = {
 const addsArray = [...adds];
 const stepArray = [...steps];
 
+const changePrices = (time) => {
+  const prices = [9,12,15];
+  [...yearlyPrices].forEach((price,index) => {
+    if(time === 'Yearly'){
+      price.textContent = `$${prices[index] * 10}/yr`
+    }
+    else {
+      price.textContent = `$${prices[index]}/mo`
+    }
+  })
+}
+
+
 checkbox.addEventListener('change', e => {
   const [Month,Year] = [...timePlans];
   Month.classList.toggle('selected-time',!e.target.checked)
@@ -43,6 +57,11 @@ checkbox.addEventListener('change', e => {
     data = {...data,time : 'Monthly'}
   }
   else data = {...data,time : 'Yearly'}
+  let {time} =  data;
+  [...advantages].forEach(advantage => {
+    advantage.classList.toggle('none',time === 'Monthly');
+  })
+  changePrices(time);
 });
 
 [...addCheckboxes].forEach((checkbox,index) => {
