@@ -36,14 +36,13 @@
 body {
   font-family:Ubuntu,sans-serif;
   font-size:16px;
-  max-width:1440px;
   overflow-y: hidden;
   background-color:var(--alabaster);
 }
 
 main {
   width:70%;
-  /* min-height:540px; */
+  max-width:1440px;
   height:fit-content;
   margin:50px auto;
   background-color:var(--white);
