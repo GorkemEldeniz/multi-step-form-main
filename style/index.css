@@ -38,14 +38,22 @@ body {
   font-size:16px;
   overflow-y: hidden;
   background-color:var(--alabaster);
+}
+
+.wrapper {
+  max-width:1440px;
+  margin-inline:auto;
   min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 main {
   width:70%;
   max-width:1440px;
+  margin-block:50px;
   height:fit-content;
-  margin:50px auto;
   background-color:var(--white);
   border:1px solid var(--light-gray);
   padding:1rem;
