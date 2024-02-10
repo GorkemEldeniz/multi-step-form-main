@@ -42,6 +42,7 @@ body {
 
 .wrapper {
   max-width:1440px;
+  width:100%;
   margin-inline:auto;
   min-height:100vh;
   display:flex;
@@ -51,7 +52,6 @@ body {
 
 main {
   width:70%;
-  max-width:1440px;
   margin-block:50px;
   height:fit-content;
   background-color:var(--white);
