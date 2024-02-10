@@ -476,7 +476,11 @@ article > p {
   
   body {
     background-color:var(--light-gray);
-    overflow:visible;
+    overflow:hidden;
+  }
+
+  .wrapper {
+    align-items:flex-start;
   }
 
   main {
