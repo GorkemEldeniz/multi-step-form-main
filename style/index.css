@@ -38,6 +38,7 @@ body {
   font-size:16px;
   overflow-y: hidden;
   background-color:var(--alabaster);
+  min-height:100vh;
 }
 
 main {
