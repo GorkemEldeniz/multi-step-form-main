@@ -14,195 +14,196 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
-
-  <main>
-      <aside>
-        <nav>
-          <ol>
-            <li>
-              <div class="number active-step">1</div>
-              <div class="step">
-                <h3>Step 1</h3>
-                <h2>Your Info</h2>
-              </div>
-            </li>
-            <li>
-              <div class="number">2</div>
-              <div class="step">
-                <h3>Step 2</h3>
-                <h2>Select Plan</h2>                
-              </div>
-            </li>
-            <li>
-              <div class="number">3</div>
-              <div class="step">
-                <h3>Step 3</h3>
-                <h2>Add-ons</h2>
-              </div>
-            </li>
-            <li>
-              <div class="number">4</div>
-              <div class="step">
-                <h3>Step 4</h3>
-                <h2>Summary</h2>
-              </div>
-            </li>
-          </ol>
-        </nav>  
-      </aside>
-      
-      <section>
-        <header class="step-1-header">
-          <h1>Personal Info</h1>
-          <h4>Please provide your name, email address, and phone number.</h4>
-        </header>
-          <form action="" class="step-1">
-            <label for="username">Name
-              <div class="error none">This field is required</div>
-            </label>
-            <input id="username" type="text" name="username" placeholder="e.g. Stephen King">
-
-            <label for="email">Email Address
-              <div class="error none">This field is required</div>
-            </label>
-            <input id="email" type="email" name="email" placeholder="e.g. stephenking@lorem.com">
-
-            <label for="phone">Phone Number
-              <div class="error none">This field is required</div>
-            </label>
-            <input id="phone" type="tel" name="phone" placeholder="e.g. +1 234 567 890">
-
-            <button>Next Step</button>
-          </form>
-
-
-          <header class="step-2-header none">
-            <h1>Select your plan</h1>
-            <h4>You have the option of monthly or yearly billing.</h4>
-          </header> 
-            <form action="" class="step-2 none">
-              <div class="plans">
-                <div class="plan-card">
-                  <img src="./assets/images/icon-arcade.svg" alt="Arcade">
-                  <h3>Arcade</h3>
-                  <h4>$9/mo</h4>
-                  <h5 class="none">2 months free</h5>
+  <div class='wrapper'>
+    <main>
+        <aside>
+          <nav>
+            <ol>
+              <li>
+                <div class="number active-step">1</div>
+                <div class="step">
+                  <h3>Step 1</h3>
+                  <h2>Your Info</h2>
                 </div>
-                <div class="plan-card"> 
-                  <img src="./assets/images/icon-advanced.svg" alt="Advanced">
-                  <h3>Advanced</h3>
-                  <h4>$12/mo</h4>
-                  <h5 class="none">2 months free</h5>
+              </li>
+              <li>
+                <div class="number">2</div>
+                <div class="step">
+                  <h3>Step 2</h3>
+                  <h2>Select Plan</h2>                
                 </div>
-                <div class="plan-card">
-                  <img src="./assets/images/icon-pro.svg" alt="Pro">
-                  <h3>Pro</h3>
-                  <h4>$15/mo</h4>
-                  <h5 class="none">2 months free</h5>
+              </li>
+              <li>
+                <div class="number">3</div>
+                <div class="step">
+                  <h3>Step 3</h3>
+                  <h2>Add-ons</h2>
                 </div>
+              </li>
+              <li>
+                <div class="number">4</div>
+                <div class="step">
+                  <h3>Step 4</h3>
+                  <h2>Summary</h2>
+                </div>
+              </li>
+            </ol>
+          </nav>  
+        </aside>
+        
+        <section>
+          <header class="step-1-header">
+            <h1>Personal Info</h1>
+            <h4>Please provide your name, email address, and phone number.</h4>
+          </header>
+            <form action="" class="step-1">
+              <label for="username">Name
+                <div class="error none">This field is required</div>
+              </label>
+              <input id="username" type="text" name="username" placeholder="e.g. Stephen King">
+  
+              <label for="email">Email Address
+                <div class="error none">This field is required</div>
+              </label>
+              <input id="email" type="email" name="email" placeholder="e.g. stephenking@lorem.com">
+  
+              <label for="phone">Phone Number
+                <div class="error none">This field is required</div>
+              </label>
+              <input id="phone" type="tel" name="phone" placeholder="e.g. +1 234 567 890">
+  
+              <button>Next Step</button>
+            </form>
+  
+  
+            <header class="step-2-header none">
+              <h1>Select your plan</h1>
+              <h4>You have the option of monthly or yearly billing.</h4>
+            </header> 
+              <form action="" class="step-2 none">
+                <div class="plans">
+                  <div class="plan-card">
+                    <img src="./assets/images/icon-arcade.svg" alt="Arcade">
+                    <h3>Arcade</h3>
+                    <h4>$9/mo</h4>
+                    <h5 class="none">2 months free</h5>
+                  </div>
+                  <div class="plan-card"> 
+                    <img src="./assets/images/icon-advanced.svg" alt="Advanced">
+                    <h3>Advanced</h3>
+                    <h4>$12/mo</h4>
+                    <h5 class="none">2 months free</h5>
+                  </div>
+                  <div class="plan-card">
+                    <img src="./assets/images/icon-pro.svg" alt="Pro">
+                    <h3>Pro</h3>
+                    <h4>$15/mo</h4>
+                    <h5 class="none">2 months free</h5>
+                  </div>
+                </div>
+  
+                <div class="time-plan">
+                  <label for="time" class="selected-time">Monthly</label>
+                  <input type="checkbox" name="time" id="time">
+                  <div class="custom-checkbox"></div>
+                  <label for="time">Yearly</label>
+                </div>
+  
+                <div class="btn">
+                  <button class="back">Go Back</button>
+                  <button>Next Step</button>
+                </div>
+              </form>
+  
+            <header class="step-3-header none">
+              <h1>Pick add-ons</h1>
+              <h4>Add-ons help enhance your gaming experience.</h4>
+            </header>             
+            
+            <form action="" class="step-3 none">
+              <div class="adds">
+                <input type="checkbox">
+                <div class="info">
+                  <h3>Online service</h3>
+                  <h4>Access to multiplayer games</h4>
+                </div>
+                <h2 class="price">+$1/mo</h2>
               </div>
-
-              <div class="time-plan">
-                <label for="time" class="selected-time">Monthly</label>
-                <input type="checkbox" name="time" id="time">
-                <div class="custom-checkbox"></div>
-                <label for="time">Yearly</label>
+              
+              <div class="adds">
+                <input type="checkbox">
+                <div class="info">
+                  <h3>Larger storage</h3>
+                  <h4>Extra 1TB of cloud save</h4>
+                </div>
+                <h2 class="price">+$2/mo</h2> 
               </div>
-
+          
+              <div class="adds">
+                <input type="checkbox">
+                <div class="info">
+                  <h3>Customizable Profile</h3>
+                  <h4>Custom theme on your profile</h4>
+                </div>
+                <h2 class="price">+$2/mo</h2>
+              </div>
+  
+  
               <div class="btn">
                 <button class="back">Go Back</button>
                 <button>Next Step</button>
               </div>
             </form>
-
-          <header class="step-3-header none">
-            <h1>Pick add-ons</h1>
-            <h4>Add-ons help enhance your gaming experience.</h4>
-          </header>             
-          
-          <form action="" class="step-3 none">
-            <div class="adds">
-              <input type="checkbox">
-              <div class="info">
-                <h3>Online service</h3>
-                <h4>Access to multiplayer games</h4>
-              </div>
-              <h2 class="price">+$1/mo</h2>
-            </div>
+  
+            <header class="step-4-header none">
+              <h1>Finishing up</h1>
+              <h4>Double-check everything looks OK before confirming.</h4>
+            </header> 
             
-            <div class="adds">
-              <input type="checkbox">
-              <div class="info">
-                <h3>Larger storage</h3>
-                <h4>Extra 1TB of cloud save</h4>
+            <form action="" class="step-4 none">
+            <div class="total-price">
+              <div class="total">
+                <div class="title">
+                  <h2>Arcade(Yearly)</h2>
+                  <h3>Change</h3>
+                </div>
+                <div class="price">$90/yr</div>
               </div>
-              <h2 class="price">+$2/mo</h2> 
-            </div>
-        
-            <div class="adds">
-              <input type="checkbox">
-              <div class="info">
-                <h3>Customizable Profile</h3>
-                <h4>Custom theme on your profile</h4>
+  
+              <div class="services">
+                <h4 class="service">Online service</h4>
+                <h4 class="price">$10/yr</h4>
               </div>
-              <h2 class="price">+$2/mo</h2>
+              
+              <div class="services">
+                <h4 class="service">Larger storage</h4>
+                <h4 class="price">$20/yr</h4>
+              </div>
+  
             </div>
-
-
+  
+            <div class="summary">
+              <h4 class="service">Total(per year)</h4>
+              <h4 class="price">$120/yr</h4>
+            </div>
+  
             <div class="btn">
               <button class="back">Go Back</button>
-              <button>Next Step</button>
+              <button>Confirm</button>
             </div>
-          </form>
-
-          <header class="step-4-header none">
-            <h1>Finishing up</h1>
-            <h4>Double-check everything looks OK before confirming.</h4>
-          </header> 
-          
-          <form action="" class="step-4 none">
-          <div class="total-price">
-            <div class="total">
-              <div class="title">
-                <h2>Arcade(Yearly)</h2>
-                <h3>Change</h3>
-              </div>
-              <div class="price">$90/yr</div>
-            </div>
-
-            <div class="services">
-              <h4 class="service">Online service</h4>
-              <h4 class="price">$10/yr</h4>
-            </div>
+  
+            </form>
+  
             
-            <div class="services">
-              <h4 class="service">Larger storage</h4>
-              <h4 class="price">$20/yr</h4>
-            </div>
-
-          </div>
-
-          <div class="summary">
-            <h4 class="service">Total(per year)</h4>
-            <h4 class="price">$120/yr</h4>
-          </div>
-
-          <div class="btn">
-            <button class="back">Go Back</button>
-            <button>Confirm</button>
-          </div>
-
-          </form>
-
-          
-          <article class="step-5 none">
-            <img src="./assets/images/icon-thank-you.svg" alt="Icon">
-            <h1>Thank you!</h1>
-            <p>Thanks for confirming your subscription!We hope you have fun using our platform.If you ever need support,please feel free to email us support@loremgaming.com.</p>
-          </article>
-      </section>
-      
-      <script src="./js/app.js"></script>
-  </main>
+            <article class="step-5 none">
+              <img src="./assets/images/icon-thank-you.svg" alt="Icon">
+              <h1>Thank you!</h1>
+              <p>Thanks for confirming your subscription!We hope you have fun using our platform.If you ever need support,please feel free to email us support@loremgaming.com.</p>
+            </article>
+        </section>
+        
+        <script src="./js/app.js"></script>
+    </main>
+  </div>
 </body>
 </html>
